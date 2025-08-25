@@ -1,0 +1,84 @@
+React front-end — components interview checklist-----------------
+
+
+
+Core UI components (implement & explain)-----------
+
+Button (variants, disabled, loading)
+Input / Textarea (controlled vs uncontrolled)
+Select / Dropdown / Multiselect
+Checkbox / Radio group
+Form (validation, accessible labels)
+Modal / Dialog (focus trap, aria)
+Tooltip / Popover (positioning, portals)
+Navbar / Header / Sidebar
+Card (media + content + actions)
+List / ListItem
+Table / Data grid (sorting, filtering, pagination)
+Tabs / Accordion
+Breadcrumb / Pagination / Badge
+Avatar / Profile picture component
+Spinner / Skeleton loader / Progress bar
+
+
+Advanced / complex components--------------------
+
+Search / Autocomplete / Typeahead
+Infinite scroll / Virtualized list (react-window/react-virtualized)
+File uploader (drag & drop, progress)
+Rich text editor (or integrate Quill/TinyMCE)
+Charts / Graphs (recharts, chart.js)
+Calendar / Date picker
+DataGrid with selection, editing, and bulk actions
+Media player / Image gallery
+
+
+Architecture & integration components-----------------
+
+Router components: Route, Link, NavLink, ProtectedRoute (auth guard)
+API layer / Fetch wrapper / Query client (axios wrapper, React Query)
+State provider components (Redux Provider, Context Provider)
+Socket/WebSocket wrapper (real-time updates)
+ThemeProvider / Styling provider (Tailwind + Theme context or styled-components ThemeProvider)
+ErrorBoundary (catch/render fallback UI)
+Suspense + lazy loaded components (code splitting)
+
+
+Patterns & component techniques you must know-------------
+
+Controlled vs uncontrolled components
+Component composition (children, render props, slots)
+Higher-order components (HOC) & render props (older patterns)
+Custom hooks (extract logic: useAuth, useForm, useFetch)
+Forwarding refs & useImperativeHandle
+Memoization: React.memo, useMemo, useCallback — when & why
+Prop drilling vs Context API vs state managers (Redux / Zustand)
+Accessibility (aria roles, keyboard nav, focus management)
+Performance: virtualization, lazy loading images, debouncing, throttling
+Testing: unit tests (Jest + React Testing Library), snapshot, integration tests
+
+
+What interviewers commonly ask / challenge you to do-------------------
+
+Build a small component live (e.g., a searchable dropdown or modal).
+Convert uncontrolled input into controlled and explain tradeoffs.
+Add accessibility: keyboard support, aria attributes, focus trap.
+Optimize re-renders (identify why child re-renders, fix with memo/useCallback).
+Implement pagination vs infinite scroll and pros/cons.
+Explain state placement: where to store state (local, context, redux).
+Show how to handle API errors and loading states in UI.
+Explain deployment/CI concerns for frontend (build size, environment vars).
+
+
+Quick prep checklist (day before interview)------------------
+
+Implement — 2 components from Core + 1 from Advanced from scratch.
+Add tests: one unit + one integration for a component.
+Walk through common hooks: useState, useEffect, useRef, useContext, useReducer.
+Practice explaining architecture of one real project (like your Fuse Chat) focusing on components, state flow, and performance wins.
+Review accessibility basics (aria, tabIndex, semantic HTML).
+
+
+
+
+
